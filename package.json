@@ -1,0 +1,9 @@
+{
+  "name": "rerobots",
+  "version": "0.1.0",
+  "description": "JS client library for rerobots",
+  "repository": "https://github.com/rerobots/js",
+  "author": "Scott C. Livingston <scott@rerobots.net>",
+  "license": "Apache-2.0",
+  "private": false
+}
