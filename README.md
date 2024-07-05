@@ -6,6 +6,8 @@ Summary
 
 JavaScript client library for [rerobots](https://rerobots.net/)
 
+https://www.npmjs.com/package/rerobots
+
 
 License
 -------
