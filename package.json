@@ -2,8 +2,17 @@
   "name": "rerobots",
   "version": "0.1.0",
   "description": "JS client library for rerobots",
-  "repository": "https://github.com/rerobots/js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rerobots/js.git"
+  },
   "author": "rerobots, Inc. <q@rerobots.net>",
   "license": "Apache-2.0",
-  "private": false
+  "scripts": {
+    "format": "yarn prettier --write src",
+    "format:check": "yarn prettier --check src"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
 }
