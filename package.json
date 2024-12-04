@@ -14,7 +14,8 @@
     "pub": "test -f lib/index.js && yarn publish",
     "clean": "rm -r -f lib",
     "format": "yarn prettier --write src",
-    "format:check": "yarn prettier --check src"
+    "format:check": "yarn prettier --check src",
+    "lint": "eslint src && tsc --noEmit"
   },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -23,9 +24,13 @@
     "yarn.lock"
   ],
   "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
     "prettier": "^3.3.3",
     "ts-loader": "^9.5.1",
     "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0",
     "webpack": "^5.97.0",
     "webpack-cli": "^5.1.4"
   },
