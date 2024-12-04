@@ -9,10 +9,26 @@
   "author": "rerobots, Inc. <q@rerobots.net>",
   "license": "Apache-2.0",
   "scripts": {
+    "build": "webpack",
+    "build:release": "webpack --mode production",
+    "pub": "test -f lib/index.js && yarn publish",
+    "clean": "rm -r -f lib",
     "format": "yarn prettier --write src",
     "format:check": "yarn prettier --check src"
   },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*.d.ts",
+    "yarn.lock"
+  ],
   "devDependencies": {
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.0",
+    "webpack-cli": "^5.1.4"
   }
 }
