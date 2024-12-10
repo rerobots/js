@@ -13,8 +13,8 @@
     "build:release": "webpack --mode production",
     "pub": "test -f lib/index.js && yarn publish",
     "clean": "rm -r -f lib",
-    "format": "yarn prettier --write src",
-    "format:check": "yarn prettier --check src",
+    "format": "yarn prettier --write src tests",
+    "format:check": "yarn prettier --check src tests",
     "lint": "eslint src && tsc --noEmit"
   },
   "main": "lib/index.js",
