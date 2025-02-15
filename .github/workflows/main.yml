@@ -23,3 +23,5 @@ jobs:
               run: |
                 yarn format:check
                 yarn lint
+            - name: Test
+              run: yarn test
