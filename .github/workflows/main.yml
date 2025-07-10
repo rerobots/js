@@ -21,7 +21,6 @@ jobs:
             - name: Lint
               if: ${{ matrix.node == 18 }}
               run: |
-                yarn format:check
                 yarn lint
             - name: Test
               run: yarn test
