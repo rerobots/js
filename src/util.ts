@@ -1,10 +1,7 @@
-const uuidRegex =
-    /^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$/;
+import * as z from 'zod';
 
 export function instanceKeepAlive(instanceId: string, token: string) {
-    if (!uuidRegex.test(instanceId)) {
-        throw new Error('instanceId not of valid form');
-    }
+    z.uuid({ error: 'instanceId not of valid form' }).parse(instanceId);
     return fetch(`https://api.rerobots.net/instance/${instanceId}/ka`, {
         method: 'POST',
         headers: {
